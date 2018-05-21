@@ -12,5 +12,9 @@ mix.webpackConfig({
 });
 
 mix.js('source/_assets/js/main.js', 'js')
+    .js('source/_assets/js/particles.js', 'js')
+    .js('source/_assets/js/particles-config.js', 'js')
+    .copy('source/_assets/js/particles.json', 'source/assets')
+    .copy('source/_assets/img/', 'source/assets/img')
     .sass('source/_assets/sass/main.scss', 'css/main.css')
     .version();
